@@ -71,6 +71,56 @@ This repository contains all code, data, and documentation for analyzing histori
 
 ---
 
+## Project Workflow
+
+This project follows a typical data analytics and machine learning pipeline, designed for transparency, reproducibility, and business impact:
+
+1. **Repository & Environment Setup**
+   - Initialize a GitHub repository for version control and collaboration.
+   - Set up your Python environment and install all dependencies from `requirements.txt`.
+   - (Optional but recommended) Initialize [DVC](https://dvc.org/doc/) for data versioning and reproducibility.
+
+2. **Data Acquisition & Understanding**
+   - Obtain the historical car insurance dataset (`data/MachineLearningRating_v3.txt`).
+   - Load the data using pandas, ensuring correct parsing of pipe-separated values.
+   - Review the data schema and familiarize yourself with key columns related to policy, client, vehicle, plan, and claims.
+
+3. **Exploratory Data Analysis (EDA)**
+   - Summarize the dataset: check data types, missing values, and descriptive statistics.
+   - Visualize distributions of key variables (e.g., TotalPremium, TotalClaims, CustomValueEstimate).
+   - Detect and handle outliers and missing data.
+   - Explore relationships between variables using correlation matrices, scatter plots, and group comparisons (e.g., by province, gender, vehicle type).
+   - Document initial insights and potential data quality issues.
+
+4. **Statistical Analysis & Hypothesis Testing**
+   - Formulate business-relevant hypotheses (e.g., risk differences across provinces, zip codes, or gender).
+   - Segment the data as needed for control and test groups.
+   - Apply appropriate statistical tests (e.g., t-tests, chi-squared tests) to validate or reject hypotheses.
+   - Interpret results in the context of insurance risk and profitability.
+
+5. **Feature Engineering & Data Preparation**
+   - Clean and preprocess the data: impute missing values, encode categorical variables, and engineer new features as needed.
+   - Convert relevant columns to appropriate data types (e.g., dates, categories, numerics).
+   - Split the data into training and testing sets for modeling.
+
+6. **Predictive Modeling**
+   - Build regression and classification models to predict claim severity and optimize premiums.
+   - Experiment with different algorithms (e.g., Linear Regression, Random Forest, XGBoost).
+   - Evaluate model performance using metrics such as RMSE, R-squared, accuracy, and F1-score.
+   - Use model interpretation tools (e.g., SHAP, LIME) to identify the most influential features and explain predictions.
+
+7. **Insight Generation & Reporting**
+   - Summarize key findings from EDA, hypothesis testing, and modeling.
+   - Visualize important results with clear, business-focused plots.
+   - Provide actionable recommendations for marketing strategy and risk-based pricing, supported by data and statistical evidence.
+
+8. **Reproducibility & Collaboration**
+   - Use Git for code versioning and collaboration.
+   - Track data and model versions with DVC to ensure full reproducibility.
+   - Document your workflow, decisions, and results clearly in notebooks and reports.
+
+---
+
 ## Learning Outcomes
 
 - Data engineering and pipeline management
@@ -110,20 +160,9 @@ This repository contains all code, data, and documentation for analyzing histori
 
 ---
 
-## Team
 
-- Facilitator: Mahlet
-- Team: Kerod, Rediet, Rehmet
 
----
 
-## Key Dates
-
-- **Challenge Start:** 11 June 2025
-- **Interim Submission:** 13 June 2025
-- **Final Submission:** 17 June 2025
-
----
 
 ## License
 
