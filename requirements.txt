@@ -2,3 +2,4 @@ numpy
 panadas
 matplotlib
 scipy
+seaborn

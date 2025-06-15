@@ -1,3 +1,5 @@
 /venv
-/data
+data/MachineLearningRating_v3.txt
 # Ignore Python bytecode files
+scripts/__pycache__
+data/Technical Content-20250614T062358Z-1-001
